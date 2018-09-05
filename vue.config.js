@@ -1,3 +1,3 @@
 module.exports = {
-  lintOnSave: false //取消Elint检测
+  lintOnSave: false //取消Elint检测.
 }
