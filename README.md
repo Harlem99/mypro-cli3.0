@@ -1,21 +1,16 @@
 # myproc
 
-## Project setup
+## 安装包依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 项目启动
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 编译打包
 ```
 npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
 ```
