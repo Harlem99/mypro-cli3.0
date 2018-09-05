@@ -20,6 +20,9 @@
       <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
     </ul>
     <h3>Ecosystem</h3>
+    <div style="width:100px">
+
+    </div>
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
@@ -32,9 +35,14 @@
 
 <script>
 export default {
+
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: String,
+                    
+  },
+  data () {
+    
   }
 }
 </script>
@@ -43,6 +51,9 @@ export default {
 <style scoped lang="less">
 h3 {
   margin: 40px 0 0;
+}
+div{
+  display: block;
 }
 ul {
   list-style-type: none;
