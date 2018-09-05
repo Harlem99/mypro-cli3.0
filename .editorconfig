@@ -1,4 +1,4 @@
-需要安装editorcon
+#需要安装editorcon
 root = true
 [*]
 charset = utf-8
