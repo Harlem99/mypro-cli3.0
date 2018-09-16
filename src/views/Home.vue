@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    {{ food }}
     <hello-world msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
@@ -10,6 +11,12 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'home',
+  props: {
+    food: {
+      type: String,
+      default: 'apple2'
+    }
+  },
   components: {
     HelloWorld
   }
