@@ -9,6 +9,15 @@ export default [
     })
   },
   {
+    path: '/name_view',
+    name: 'name_view',
+    components: {
+      default: () => import('@/views/child.vue'),
+      bus1: () => import('@/views/Bus1.vue'),
+      bus2: () => import('@/views/Bus2.vue')
+    } 
+  },
+  {
     path: '/login',
     name: 'login',
     component: () => import('@/views/login.vue')
@@ -36,6 +45,21 @@ export default [
         component: () => import('@/views/child.vue')
       }
     ]
+  },
+  {
+    path: '/store',
+    name: 'store',
+    component: () => import('@/views/store.vue')
+  },
+  {
+    path: '/bus1',
+    name: 'bus1',
+    component: () => import('@/views/Bus1.vue')
+  },
+  {
+    path: '/bus2',
+    name: 'bus2',
+    component: () => import('@/views/Bus2.vue')
   },
   {
     path: '*',

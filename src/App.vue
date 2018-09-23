@@ -5,6 +5,11 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+
+    <transition-group>
+       <router-view key="bus1" name="bus1"/>
+       <router-view key="bus2" name="bus2"/>
+    </transition-group>
   </div>
 </template>
 
