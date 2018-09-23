@@ -47,6 +47,11 @@ export default [
     ]
   },
   {
+    path: '/filters',
+    name: 'filters',
+    component: () => import('@/views/filters.vue')
+  },
+  {
     path: '/store',
     name: 'store',
     component: () => import('@/views/store.vue')
