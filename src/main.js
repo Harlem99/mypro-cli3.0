@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import Bus from './lib/bus'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false //去掉提示
 Vue.prototype.$bus = Bus
 
 new Vue({
