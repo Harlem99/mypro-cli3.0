@@ -57,6 +57,11 @@ export default [
     component: () => import('@/views/store.vue')
   },
   {
+    path: '/store2',
+    name: 'store2',
+    component: () => import('@/views/store2.vue')
+  },
+  {
     path: '/bus1',
     name: 'bus1',
     component: () => import('@/views/Bus1.vue')
