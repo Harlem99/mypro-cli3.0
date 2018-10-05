@@ -1,6 +1,10 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
+  <div>
+    <h1>{{ msg }},{{ newCount }}</h1>
+    <div> {{dizeng}} </div>
+    <p>
+      <button @click="jisuan">计算</button>
+    </p>
   </div>
 </template>
 
@@ -10,9 +14,20 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String,  
+    newCount: {
+      type: Number,
+      default: '0'
+    }
   },
   data () {
-    return {}
+    return {
+      dizeng: 0
+    }
+  },
+  methods:{
+    jisuan(){
+      this.dizeng+=1
+    }
   }
 }
 </script>

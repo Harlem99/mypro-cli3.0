@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     {{ food }}
-    <hello-world msg="Welcome to Your Vue.js App"/>
+    <hello-world :id="elId" :new-count="count" msg="萌萌是小仙女"/>
     <button @click="increment">{{ count }}</button>
     <div>
     <div style="height: 400px; width: 400px;">
@@ -40,6 +40,11 @@ export default {
     return {
       count: 0,
       data: ['1212','131']
+    }
+  },
+  computed:{
+    elId () {
+      return `elID_${this._uid}`
     }
   },
   mounted () {
