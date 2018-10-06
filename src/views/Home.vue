@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     {{ food }}
-    <hello-world :id="elId" :new-count="count" msg="萌萌是小仙女"/>
+    <hello-world :id="elId" :new-count="count" msg="hello world"/>
     <button @click="increment">{{ count }}</button>
     <div>
     <div style="height: 400px; width: 400px;">

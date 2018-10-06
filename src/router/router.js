@@ -72,6 +72,11 @@ export default [
     component: () => import('@/views/Bus2.vue')
   },
   {
+    path: '/render',
+    name: 'render',
+    component: () => import('@/views/render.vue')
+  },
+  {
     path: '*',
     component: () => import('@/views/error404.vue'),
    
