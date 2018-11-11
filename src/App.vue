@@ -11,9 +11,10 @@
        <router-view key="bus2" name="bus2"/>
     </transition-group>
   </div>
+  
 </template>
 
-<style lang="less">
+<style lang="less" type="stylesheet/less">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
