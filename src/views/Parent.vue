@@ -1,10 +1,29 @@
 <template>
   <div>
     <Table border :columns="columns7" :data="data6"></Table>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <!-- <div class="swiper-pagination"></div> -->
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+    </div>
   </div>
 </template>
 
 <script>
+import Swiper from 'swiper'
+import 'swiper/dist/css/swiper.css';
 export default {
   data () {
           return {
@@ -91,6 +110,25 @@ export default {
               ]
           }
       },
+      mounted () {
+           new Swiper ('.swiper-container', {
+        
+            loop: true, // 循环模式选项
+            
+            slidesPerView: 3, //         
+            // 如果需要分页器
+            pagination: {
+             el: '.swiper-pagination',
+            },
+            
+            // 如果需要前进后退按钮
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        
+        })  
+      },
       methods: {
           show (index) {
               this.$Modal.info({
@@ -105,3 +143,15 @@ export default {
 }
 </script>
 
+<style>
+    .swiper-container {
+        width: 600px;
+        height: 300px;
+        margin: 0 auto;
+        
+    }  
+    .swiper-slide {
+        background: burlywood;
+        border:1px solid #ddd;
+    }
+</style>
