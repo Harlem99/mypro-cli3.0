@@ -1,5 +1,5 @@
 const state = {
-  appName: 'admin2'
+  appName: 'admin'
   //
 }
 export default state

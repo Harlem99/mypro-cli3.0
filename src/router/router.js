@@ -77,6 +77,11 @@ export default [
     component: () => import('@/views/render.vue')
   },
   {
+    path: '/zgsb',
+    name: 'zgsb',
+    component: () => import('@/views/wjsq/zgsb.vue')
+  },
+  {
     path: '*',
     component: () => import('@/views/error404.vue'),
    

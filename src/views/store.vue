@@ -39,9 +39,9 @@ export default {
     }
   },
   computed: {
-    // appName () {
-    //   return this.$store.state.appName
-    // },
+    appName () {
+      return this.$store.state.appName
+    },
     // userName () {
     //   return this.$store.state.user.userName
     // }

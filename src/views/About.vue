@@ -2,7 +2,6 @@
   <div class="about">
     <h1>This is an about page!</h1>
     <div> {{ food }} </div>
-    <p> {{c}} </p>
   </div>
 </template>
 
@@ -18,12 +17,10 @@ export default {
   data () {
     return {
       strs: 'hongliang',
-      c: '',
+
     }
   },
   mounted () {
-    this.c = toUpper(this.strs)
-    console.log(c)
   }
 }
 </script>
